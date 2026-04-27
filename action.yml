@@ -1,0 +1,33 @@
+name: 'ComparEdge SaaS Price Check'
+description: 'Check current SaaS pricing data from ComparEdge. Monitor price changes for your tech stack.'
+author: 'ComparEdge'
+branding:
+  icon: 'dollar-sign'
+  color: 'green'
+inputs:
+  products:
+    description: 'Comma-separated list of product slugs to check (e.g., notion,slack,github)'
+    required: false
+    default: ''
+  category:
+    description: 'Category to check (e.g., crm, llm, project-management)'
+    required: false
+    default: ''
+  max-price:
+    description: 'Alert if any product starting price exceeds this amount (USD/mo)'
+    required: false
+    default: ''
+  output-format:
+    description: 'Output format: table, json, or csv'
+    required: false
+    default: 'table'
+outputs:
+  products-json:
+    description: 'JSON array of checked products with current pricing'
+  total-products:
+    description: 'Number of products checked'
+  alerts:
+    description: 'Number of price alerts triggered'
+runs:
+  using: 'node20'
+  main: 'index.js'
