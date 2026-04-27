@@ -1,7 +1,7 @@
 # ComparEdge SaaS Price Check
 
 > GitHub Action that checks current SaaS pricing data from the [ComparEdge](https://comparedge.com) API.
-> 331 products · 28 categories · No API key required.
+> SaaS pricing data from ComparEdge. No API key required.
 
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-ComparEdge%20SaaS%20Price%20Check-blue?logo=github)](https://github.com/marketplace/actions/comparedge-saas-price-check)
 
@@ -101,10 +101,10 @@ jobs:
 
 ## Available product slugs
 
-Browse all 331 products at **[comparedge.com](https://comparedge.com)** or query the API directly:
+Browse all products at **[comparedge.com](https://comparedge.com)** or query the API directly:
 
 ```
-GET https://comparedge-api.up.railway.app/api/v1/products?limit=331
+GET https://comparedge-api.up.railway.app/api/v1/products?limit=50
 ```
 
 **Popular slugs:** `notion`, `slack`, `linear`, `figma`, `vercel`, `github`, `gitlab`, `datadog`, `pagerduty`, `jira`, `confluence`, `asana`, `monday`, `hubspot`, `salesforce`, `intercom`, `zendesk`, `stripe`, `twilio`, `sendgrid`
